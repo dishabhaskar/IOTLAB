@@ -9,7 +9,7 @@ void setup()
 
 void loop() 
 {
-  sensorValue=analogread(A0);
+  sensorValue=analogRead(A0);
   outputValue=map(sensorValue,0,1023,0,255);
   analogWrite(9,outputValue);
   Serial.print("sensor value=");
